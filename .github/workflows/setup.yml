@@ -15,6 +15,8 @@
 
 
 name: Setup CI
+permissions:
+  contents: write
 on:
   push:
     paths:
@@ -52,10 +54,11 @@ jobs:
         env:
           GH_PAT: ${{ secrets.GH_PAT || github.token }}
       - name: Generate graphs
-        uses: benc-uk/workflow-dispatch@v1
+        uses: upptime/uptime-monitor@v1.41.0
         with:
-          workflow: Graphs CI
-          token: ${{ secrets.GH_PAT || github.token }}
+          command: "graphs"
+        env:
+          GH_PAT: ${{ secrets.GH_PAT || github.token }}
       - name: Generate site
         uses: upptime/uptime-monitor@v1.41.0
         with:
