@@ -1,36 +1,22 @@
 # Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: Mister-Estate
+repo: web-status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
+  - name: Mister-Estate
+    url: https://mister-estate.ai/
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
+  # Modifiez le CNAME par votre propre sous-domaine (ex: status.mister-estate.ai) 
+  # ou utilisez baseUrl si vous n'avez pas de domaine dédié.
+  cname: status.mister-estate.ai
+  # baseUrl: /web-status
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  name: Mister Estate Status
+  introTitle: "**Mister Estate** : État des services et performance"
+  introMessage: "Suivez en temps réel la disponibilité de nos outils d'**estimation immobilière**. Cette page surveille la stabilité de nos algorithmes d'analyse de prix pour vous garantir un service fiable et précis pour vos projets immobiliers."
   navbar:
-    - title: Status
+    - title: État du Service
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+    - title: Site Principal
+      href: https://mister-estate.ai/
