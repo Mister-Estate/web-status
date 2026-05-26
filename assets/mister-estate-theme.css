@@ -1,0 +1,32 @@
+:root {
+  --body-background-color: #faf6ee;
+  --body-text-color: #1d1d1d;
+  --card-background-color: #ffffff;
+  --nav-background-color: #ffffff;
+  --nav-border-bottom-color: #e8e0d4;
+  --nav-current-border-bottom-color: #14415a;
+  --nav-text-color: #1d1d1d;
+  --nav-hover-background-color: #faf6ee;
+  --nav-hover-text-color: #14415a;
+  --card-border-color: #e8e0d4;
+  --down-border-left-color: #ff385c;
+  --down-background-color: #fff5f5;
+  --degraded-border-left-color: #c9a84c;
+  --up-border-left-color: #14415a;
+  --up-background-color: #f4f8fa;
+  --tag-color: #1d1d1d;
+  --tag-up-background-color: #e8f0f4;
+  --tag-down-background-color: #ffe8ec;
+  --tag-degraded-background-color: #f5edd8;
+  --change-background-color: #14415a;
+  --error-button-border-color: #14415a;
+  --error-button-background-color: #14415a;
+  --error-button-color: #ffffff;
+  --submit-button-border-color: #b48c4d;
+  --submit-button-background-color: #c9a84c;
+  --submit-button-color: #1d1d1d;
+}
+
+.logo img {
+  border-radius: 0.5rem;
+}

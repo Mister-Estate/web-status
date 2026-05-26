@@ -1,4 +1,3 @@
-# Change these first
 owner: Mister-Estate
 repo: web-status
 
@@ -7,27 +6,21 @@ sites:
     url: https://mister-estate.ai/
   - name: Application web
     url: https://app.mister-estate.ai/
-  - name: API publique
-    url: https://api.mister-estate.ai/
   - name: Documentation
     url: https://docs.mister-estate.ai/
-  - name: Page de statut
-    url: https://status.mister-estate.ai/
 
 status-website:
-  # Modifiez le CNAME par votre propre sous-domaine (ex: status.mister-estate.ai) 
-  # ou utilisez baseUrl si vous n'avez pas de domaine dédié.
   cname: status.mister-estate.ai
-  # baseUrl: /web-status
-  logoUrl: https://mister-estate.ai/favicon.svg
-  themeUrl: https://raw.githubusercontent.com/Mister-Estate/web-status/master/assets/brand.css
-  name: Mister Estate Status
-  introTitle: "**Mister Estate** : État des services et performance"
-  introMessage: "Suivez en temps réel la disponibilité de nos services (site, application, API et documentation). Cette page surveille la stabilité de nos outils d'analyse immobilière pour garantir une expérience fiable."
+  logoUrl: https://raw.githubusercontent.com/Mister-Estate/web-status/master/assets/logo.svg
+  faviconUrl: https://raw.githubusercontent.com/Mister-Estate/web-status/master/assets/favicon.svg
+  themeUrl: https://raw.githubusercontent.com/Mister-Estate/web-status/master/assets/mister-estate-theme.css
+  name: Mister Estate
+  introTitle: "**Mister Estate** — Disponibilité des services"
+  introMessage: "Suivez en temps réel la disponibilité du site, de l'application et de la documentation. Ces indicateurs reflètent la stabilité de nos outils d'analyse immobilière basés sur les données publiques officielles (DVF, cadastre IGN)."
   navbar:
-    - title: État du Service
+    - title: Vue d'ensemble
       href: /
-    - title: Site Principal
+    - title: Site vitrine
       href: https://mister-estate.ai/
     - title: Application
       href: https://app.mister-estate.ai/
