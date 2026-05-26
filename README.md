@@ -18,9 +18,12 @@ Page de disponibilité publique pour l'écosystème [Mister Estate](https://mist
 
 ## Déploiement
 
-1. Activer **GitHub Pages** sur ce dépôt (source : branche `gh-pages`, générée par le workflow *Static Site CI*).
-2. Ajouter un enregistrement DNS **CNAME** : `status.mister-estate.ai` → `mister-estate.github.io` (ou l'URL Pages du dépôt `Mister-Estate/web-status`).
-3. Les workflows GitHub Actions (`Uptime CI`, `Response Time CI`, etc.) collectent automatiquement les métriques après chaque push sur `master`.
+1. **Branche `gh-pages`** : publiée par les workflows *Setup CI*, *Static Site CI* et *Deploy Status Page* (`peaceiris/actions-gh-pages`, CNAME `status.mister-estate.ai`).
+2. **GitHub Pages** (une fois) : [Paramètres → Pages](https://github.com/Mister-Estate/web-status/settings/pages) → Source **Deploy from a branch** → branche **`gh-pages`** → dossier **`/ (root)`**.
+3. **Permissions Actions** : *Settings → Actions → General* → *Workflow permissions* → **Read and write**.
+4. **DNS** : enregistrement **CNAME** `status` → `mister-estate.github.io` (ou l’hôte Pages indiqué par GitHub).
+5. **Déclencher un déploiement** : onglet [Actions](https://github.com/Mister-Estate/web-status/actions) → *Deploy Status Page* ou *Setup CI* → **Run workflow**.
+6. Les workflows `Uptime CI` et `Response Time CI` alimentent ensuite `history/` et `api/` sur `master`.
 
 ## Personnalisation
 
